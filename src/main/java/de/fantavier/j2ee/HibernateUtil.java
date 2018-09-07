@@ -19,7 +19,7 @@ public class HibernateUtil {
 
     public static void buildSessionFactory() {
         try {
-            configuration.configure();
+            configuration.configure("hibernate.cfg.xml");
             sessionFactory = configuration.buildSessionFactory();
         }catch (Exception e){
             LOGGER.error("Error Creating Hibernate SessionFactory", e);
