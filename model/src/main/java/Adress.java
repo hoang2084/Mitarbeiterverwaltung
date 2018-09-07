@@ -9,15 +9,15 @@ public class Adress implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
 
-    @Column("PLZ")
+    @Column(name="PLZ")
     @Basic(optional = false)
     String plz;
 
-    @Column("PLZ")
+    @Column(name="PLZ")
     @Basic(optional = false)
     String Street;
 
-    @Column("PLZ")
+    @Column(name="PLZ")
     @Basic(optional = false)
     String city;
 
