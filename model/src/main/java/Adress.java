@@ -1,8 +1,13 @@
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name="ADRESS")
+@Data
 public class Adress implements Serializable {
 
     @Id
@@ -21,35 +26,5 @@ public class Adress implements Serializable {
     @Basic(optional = false)
     String city;
 
-    public String getPlz() {
-        return plz;
-    }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getStreet() {
-        return Street;
-    }
-
-    public void setStreet(String street) {
-        Street = street;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public void setPlz(String plz) {
-        this.plz = plz;
-    }
 }
