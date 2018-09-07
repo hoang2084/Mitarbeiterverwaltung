@@ -4,6 +4,14 @@
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.url">jdbc:postgresql://ec2-54-246-101-215.eu-west-1.compute.amazonaws.com:5432/d2fm2membtmh9p</property>
+    <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+    <property name="connection.username">jhjeebvaaumlzd</property>
+    <property name="connection.password">eeb34f237417b33114a34a3f4738a4522063d95f39f3e0a5c5c1b8a38eba2604</property>
+    <property name="current_session_context_class">thread</property>
+    <property name="format_sql">false</property>
+
 
   </session-factory>
 </hibernate-configuration>
