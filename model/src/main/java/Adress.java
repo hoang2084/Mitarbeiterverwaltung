@@ -13,11 +13,11 @@ public class Adress implements Serializable {
     @Basic(optional = false)
     String plz;
 
-    @Column(name="PLZ")
+    @Column(name="STREET")
     @Basic(optional = false)
     String Street;
 
-    @Column(name="PLZ")
+    @Column(name="CITY")
     @Basic(optional = false)
     String city;
 
